@@ -30,7 +30,7 @@
 	
 		
 		<control type="label">
-			<label>home</label>
+			<label>Accueil</label>
 					<posx>70</posx>
 					<posy>190</posy>
 					<height>30</height>
@@ -61,7 +61,7 @@
 
 
 		<control type="label">
-			<label>movies</label>
+			<label>films</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -72,7 +72,7 @@
 
 
 		<control type="label">
-			<label>music</label>
+			<label>musique</label>
 					<posx>74</posx>
 					<posy>325</posy>
 					<height>30</height>
@@ -83,7 +83,7 @@
 
 
 		<control type="label">
-			<label>tv shows</label>
+			<label>séries tv</label>
 					<posx>74</posx>
 					<posy>365</posy>
 					<height>30</height>
@@ -95,7 +95,7 @@
 		
 		
 		<control type="label">
-			<label>weather</label>
+			<label>météo</label>
 					<posx>74</posx>
 					<posy>405</posy>
 					<height>30</height>
@@ -105,7 +105,7 @@
 		</control>
 		
 		<control type="label">
-			<label>settings</label>
+			<label>réglages</label>
 					<posx>74</posx>
 					<posy>485</posy>
 					<height>30</height>
@@ -115,7 +115,7 @@
 		</control>
 		
 	<control type="label">
-			<label>shutdown</label>
+			<label>quitter</label>
 					<posx>74</posx>
 					<posy>525</posy>
 					<height>30</height>
@@ -130,7 +130,7 @@
 		
 		
 		<control type="label">
-			<label>[COLOR Accent]movies[/COLOR]</label>
+			<label>[COLOR Accent]films[/COLOR]</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -144,7 +144,7 @@
 
 
 		<control type="label">
-			<label>[COLOR Accent]music[/COLOR]</label>
+			<label>[COLOR Accent]musique[/COLOR]</label>
 					<posx>74</posx>
 					<posy>325</posy>
 					<height>30</height>
@@ -159,7 +159,7 @@
 
 
 		<control type="label">
-			<label>[COLOR Accent]tv shows[/COLOR]</label>
+			<label>[COLOR Accent]séries tv[/COLOR]</label>
 					<posx>74</posx>
 					<posy>365</posy>
 					<height>30</height>
@@ -174,7 +174,7 @@
 		
 		
 		<control type="label">
-			<label>[COLOR Accent]weather[/COLOR]</label>
+			<label>[COLOR Accent]météo[/COLOR]</label>
 					<posx>74</posx>
 					<posy>405</posy>
 					<height>30</height>
@@ -187,7 +187,7 @@
 		</control>
 		
 		<control type="label">
-			<label>[COLOR Accent]settings[/COLOR]</label>
+			<label>[COLOR Accent]réglages[/COLOR]</label>
 					<posx>74</posx>
 					<posy>485</posy>
 					<height>30</height>
@@ -200,7 +200,7 @@
 		</control>
 		
 	<control type="label">
-			<label>[COLOR Accent]shutdown[/COLOR]</label>
+			<label>[COLOR Accent]quitter[/COLOR]</label>
 					<posx>74</posx>
 					<posy>525</posy>
 					<height>30</height>
@@ -795,7 +795,7 @@
 			
 			
 		<control type="label">
-			<label>library</label>
+			<label>bibliothèque</label>
 					<posx>360</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -806,7 +806,7 @@
 		
 		
 		<control type="label">
-			<label>recent movies</label>
+			<label>films récents</label>
 					<posx>720</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -945,7 +945,7 @@
 
 			
 		<control type="label">
-			<label>All Movies </label>
+			<label>Tous les films </label>
 					<posx>370</posx>
 					<posy>410</posy>
 					<height>30</height>
@@ -974,7 +974,7 @@
 			
 		
 		<control type="label">
-			<label>All Recent</label>
+			<label>Récents</label>
 					<posx>530</posx>
 					<posy>568</posy>
 					<height>30</height>
@@ -1832,7 +1832,7 @@
 			
 			
 		<control type="label">
-			<label>library</label>
+			<label>bibliothèque</label>
 					<posx>360</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -1843,7 +1843,7 @@
 		
 		
 		<control type="label">
-			<label>recent albums</label>
+			<label>albums récents</label>
 					<posx>720</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -1983,7 +1983,7 @@
 
 			
 		<control type="label">
-			<label>All Albums</label>
+			<label>Tous les Albums</label>
 					<posx>370</posx>
 					<posy>410</posy>
 					<height>30</height>
@@ -1993,7 +1993,7 @@
 		</control>	
 
 		<control type="label">
-			<label>Last Played</label>
+			<label>Derniers Joués</label>
 					<posx>370</posx>
 					<posy>568</posy>
 					<height>30</height>
@@ -2012,7 +2012,7 @@
 			
 		
 		<control type="label">
-			<label>All Recent</label>
+			<label>Récents</label>
 					<posx>530</posx>
 					<posy>568</posy>
 					<height>30</height>
@@ -2861,7 +2861,7 @@
 			
 
 <control type="label">
-			<label>library</label>
+			<label>bibliothèque</label>
 					<posx>360</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -2872,7 +2872,7 @@
 		
 		
 		<control type="label">
-			<label>recent tv shows</label>
+			<label>dernières séries tv</label>
 					<posx>720</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -3009,7 +3009,7 @@
 
 			
 		<control type="label">
-			<label>All TV Shows</label>
+			<label>Toutes les séries TV</label>
 					<posx>370</posx>
 					<posy>410</posy>
 					<height>30</height>
@@ -3038,7 +3038,7 @@
 			
 		
 		<control type="label">
-			<label>All Recent</label>
+			<label>Récents</label>
 					<posx>530</posx>
 					<posy>568</posy>
 					<height>30</height>
@@ -3891,7 +3891,7 @@
 			
 
 <control type="label">
-			<label>settings</label>
+			<label>réglages</label>
 					<posx>360</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -3998,19 +3998,19 @@
 
 			<content>
 				<item id="1">
-					<description>Appearance</description>
+					<description>Apparence</description>
 					<label>480</label>
 					<thumb>icons/appearance.png</thumb>
 					<onclick>activatewindow(AppearanceSettings)</onclick>
 				</item>
 				<item id="2">
-					<description>Videos</description>
+					<description>Vidéos</description>
 					<label>3</label>
 					<thumb>icons/videos.png</thumb>
 					<onclick>activatewindow(VideosSettings)</onclick>
 				</item>
 				<item id="3">
-					<description>Music</description>
+					<description>Musique</description>
 					<label>2</label>
 					<thumb>icons/music.png</thumb>
 					<onclick>activatewindow(MusicSettings,return)</onclick>
@@ -4022,43 +4022,43 @@
 					<onclick>activatewindow(AddonBrowser,return)</onclick>
 				</item>
 				<item id="5">
-					<description>Pictures</description>
+					<description>Photos</description>
 					<label>1</label>
 					<thumb>icons/pictures.png</thumb>
 					<onclick>activatewindow(PicturesSettings,return)</onclick>
 				</item>
 				<item id="6">
-					<description>Weather</description>
+					<description>Météo</description>
 					<label>8</label>
 					<thumb>icons/weather.png</thumb>
 					<onclick>activatewindow(WeatherSettings,return)</onclick>
 				</item>
 				<item id="7">
-					<description>Network</description>
+					<description>Réseau</description>
 					<label>705</label>
 					<thumb>icons/network.png</thumb>
 					<onclick>activatewindow(NetworkSettings,return)</onclick>
 				</item>
 				<item id="8">
-					<description>System</description>
+					<description>Système</description>
 					<label>13000</label>
 					<thumb>icons/system.png</thumb>
 					<onclick>activatewindow(SystemSettings,return)</onclick>
 				</item>
 				<item id="9">
-					<description>Profiles</description>
+					<description>Profils</description>
 					<label>13200</label>
 					<thumb>icons/profile.png</thumb>
 					<onclick>activatewindow(Profiles,return)</onclick>
 				</item>
 				<item id="10">
-					<description>System Info</description>
+					<description>Infos Système</description>
 					<label>130</label>
 					<thumb>icons/info.png</thumb>
 					<onclick>activatewindow(7,return)</onclick>
 				</item>
 				<item id="11">
-					<description>Custom Settings</description>
+					<description>Réglages Perso</description>
 					<label>636</label>
 					<onclick>activatewindow(56,return)</onclick>
 				</item>
