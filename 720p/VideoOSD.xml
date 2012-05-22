@@ -1,0 +1,289 @@
+<window id="2901">
+	<defaultcontrol always="true">14</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+		
+				<animation type="WindowOpen">
+		<effect type="zoom" start="108" end="100" time="400" center="640,360" tween="cubic" easing="out" />
+		<effect type="fade" start="0" end="100" time="400" />
+	</animation>
+	<animation type="WindowClose">
+		<effect type="zoom" start="100" end="108" time="400"  center="640,360" tween="cubic" easing="out" />
+		<effect type="fade" start="100" end="0" time="400" />
+	</animation>
+
+		
+			<posx>0</posx>
+			<posy>10</posy>
+
+			<control type="image">
+				<posx>0</posx>
+				<posy>-10</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>other_textures/black-back.png</texture>
+				<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+				<visible>Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings)</visible>
+			</control>
+
+			<control type="group">
+				<visible>!Window.IsVisible(sliderdialog)</visible>
+
+	
+<!--
+				<control type="label">
+					<description>Current Control</description>
+					<posx>470</posx>
+					<posy>63</posy>
+					<width>340</width>
+					<align>center</align>
+					<label>$INFO[System.CurrentControl]</label>
+				</control>
+
+	
+
+				<control type="label">
+					<posx>150</posx>
+					<posy>80</posy>
+					<include>DialogID</include>
+					<label>VideoOSD.xml</label>
+				</control>
+
+-->
+				<control type="grouplist" id="100">
+					<posx>960</posx>
+					<posy>2</posy>
+					<width>500</width>
+					<height>60</height>
+					<itemgap>2</itemgap>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<onleft>6</onleft>
+					<onright>1</onright>
+					<onup>-</onup>
+					<ondown>-</ondown>
+
+					<control type="button" id="1">
+						<description>Bookmarks</description>
+						<width>50</width>
+						<height>50</height>
+						<ondown>13</ondown>
+						<label>298</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/BookMarksFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/BookMarksNF.png</texturenofocus>
+						<onclick>ActivateWindow(125)</onclick>
+					</control>
+
+					<control type="button" id="2">
+						<description>Audio Settings</description>
+						<width>50</width>
+						<height>50</height>
+						<ondown>14</ondown>
+						<label>13396</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/AudioFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/AudioNF.png</texturenofocus>
+						<onclick>ActivateWindow(124)</onclick>
+					</control>
+
+					<control type="button" id="3">
+						<description>Video Settings</description>
+						<width>50</width>
+						<height>50</height>
+						<ondown>15</ondown>
+						<label>13395</label>
+						<align>left</align>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/VideoFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/VideoNF.png</texturenofocus>
+						<onclick>ActivateWindow(123)</onclick>
+					</control>
+					
+					
+					
+					<control type="button" id="4">
+						<description>Subtitles</description>
+						<width>50</width>
+						<height>50</height>
+						<ondown>16</ondown>
+						<label>287</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/SubtitlesFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/SubtitlesNF.png</texturenofocus>
+						<onclick>Close</onclick>
+						<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
+						<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
+					</control>
+
+					<control type="button" id="5">
+						<description>Subtitles</description>
+						<width>50</width>
+						<height>50</height>
+						<label>287</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/SubtitlesFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/SubtitlesNF.png</texturenofocus>
+						<onclick>Close</onclick>
+						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
+						<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
+					</control>
+
+					<control type="button" id="6">
+						<description>DVD menu</description>
+						<width>50</width>
+						<height>50</height>
+						<label>31041</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/DvdFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/DvdNF.png</texturenofocus>
+						<onclick>PlayerControl(ShowVideoMenu)</onclick>
+						<enable>VideoPlayer.HasMenu</enable>
+					</control>
+					
+
+				</control>
+
+
+
+				<control type="group">
+					<posx>0</posx>
+					<posy>-10</posy>
+						
+					<control type="button" id="12">
+						<description>Skip Back</description>
+						<posx>37</posx>
+						<posy>523</posy>
+						<width>74</width>
+						<height>74</height>
+									
+					<onleft>-</onleft>
+			   		<onright>13</onright>
+					<onup>100</onup>
+					<ondown>-</ondown>
+						
+						<label>210</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/PrevTrackGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/PrevTrackNF.png</texturenofocus>
+						<onclick>PlayerControl(Previous)</onclick>
+					</control>
+
+					<control type="button" id="13">
+						<description>Rewind</description>						
+						<posx>935</posx>
+						<posy>586</posy>
+						<width>40</width>
+						<height>40</height>	
+								
+					<onleft>12</onleft>
+			   		<onright>14</onright>
+					<onup>1</onup>
+					<ondown>-</ondown>
+					
+						<label>31036</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/RewindGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/RewindNF.png</texturenofocus>
+						<onclick>PlayerControl(Rewind)</onclick>
+					</control>
+
+					<control type="togglebutton" id="14">
+						<description>Play/Pause</description>
+						<posx>980</posx>
+						<posy>574</posy>
+						<width>66</width>
+						<height>66</height>
+									
+					<onleft>13</onleft>
+			   		<onright>15</onright>
+					<onup>2</onup>
+					<ondown>-</ondown>
+						
+						<label>31037</label>
+						<altlabel>208</altlabel>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/PauseGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/PauseNF.png</texturenofocus>
+						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+						<alttexturefocus>other_textures/OSD/PlayGreenFO.png</alttexturefocus>
+						<alttexturenofocus>other_textures/OSD/PlayNF.png</alttexturenofocus>
+						<onclick>PlayerControl(Play)</onclick>
+					</control>
+
+					<control type="button" id="15">
+						<description>Stop</description>						
+						<posx>1050</posx>
+						<posy>586</posy>
+						<width>40</width>
+						<height>40</height>
+						
+					<onleft>14</onleft>
+			   		<onright>16</onright>
+					<onup>3</onup>
+					<ondown>-</ondown>
+						
+						<label>31038</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/StopGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/StopNF.png</texturenofocus>
+						<onclick>PlayerControl(Stop)</onclick>
+					</control>
+
+					<control type="button" id="16">
+						<description>Fast Forward</description>						
+						<posx>1096</posx>
+						<posy>586</posy>
+						<width>40</width>
+						<height>40</height>
+						
+					<onleft>15</onleft>
+			   		<onright>17</onright>
+					<onup>4</onup>
+					<ondown>-</ondown>
+						
+						<label>31039</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/ForwardGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/ForwardNF.png</texturenofocus>
+						<onclick>PlayerControl(Forward)</onclick>
+					</control>
+
+					<control type="button" id="17">
+						<description>Next</description>
+						<posx>1168</posx>
+						<posy>523</posy>
+						<width>74</width>
+						<height>74</height>
+						
+					<onleft>16</onleft>
+			   		<onright>17</onright>
+					<onup>4</onup>
+					<ondown>-</ondown>
+						
+						
+						<label>209</label>
+						<font>-</font>
+						<texturefocus>other_textures/OSD/NextTrackGreenFO.png</texturefocus>
+						<texturenofocus>other_textures/OSD/NextTrackNF.png</texturenofocus>
+						<onclick>PlayerControl(Next)</onclick>
+					</control>
+					
+				</control>
+				
+				
+
+
+
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>
