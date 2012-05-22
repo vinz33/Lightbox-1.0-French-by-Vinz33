@@ -432,7 +432,7 @@
 				<posy>56</posy>
 				<width>1120</width>
 				<align>center</align>
-				<label>[B]paused[/B]</label>
+				<label>[B]En pause[/B]</label>
 				<visible>player.paused</visible>
 			</control>
 
@@ -545,7 +545,7 @@
 				<posy>56</posy>
 				<width>1120</width>
 				<align>center</align>
-				<label>[B]paused[/B]</label>
+				<label>[B]En pause[/B]</label>
 				<visible>player.paused</visible>
 			</control>
 
