@@ -78,7 +78,7 @@
 
 
 
-			
+		<!--LIST 504-->	
 			<control type="fixedlist" id="504">
 				<posx>70</posx>
 				<posy>-72</posy>
@@ -124,24 +124,29 @@
 				</itemlayout>
 				
 				
-				<focusedlayout width="1000" height="200">
-				
+				<focusedlayout width="1000" height="200">				
 					<control type="image">
 						<posx>12</posx>
 						<posy>12</posy>
 						<width>200</width>
 						<height>200</height>
-						<align>left</align>
-						
-			<fadetime>500</fadetime>
+						<align>left</align>						
+						<fadetime>500</fadetime>
 				     	<aspectratio>scale</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
-				<visible>!IsEmpty(ListItem.Icon)</visible>
-						
+						<visible>!IsEmpty(ListItem.Icon)</visible>						
 					</control>
-					
-					
-					
+
+					<!--WATCHED OVERLAY-->
+					<control type="image">
+						<posx>12</posx>							
+						<posy>12</posy>							
+						<height>60</height>
+						<width>60</width>
+						<fadetime>500</fadetime>
+						<aspectratio>scale</aspectratio>
+						<texture>$INFO[ListItem.Overlay,overlays/]</texture>						
+					</control>	
 					
 					<control type="label">
 						<posx>230</posx>
@@ -149,11 +154,10 @@
 						<width>392</width>
 						<height>25</height>
 						<aligny>left</aligny>
-					<font>Large</font>
+						<font>Large</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>
-						
+						<label>$INFO[ListItem.Title]</label>						
 						<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
 					</control>		
 					
@@ -166,8 +170,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						
+						<selectedcolor>Accent</selectedcolor>						
 						<label>[B]$INFO[ListItem.TVShowTitle][/B]</label>						
 						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
 					</control>
@@ -183,8 +186,7 @@
 						<selectedcolor>Accent</selectedcolor>
 						<label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>						
 						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
-					</control>
-					
+					</control>					
 					
 					<control type="label">
 						<posx>230</posx>
@@ -197,21 +199,17 @@
 						<selectedcolor>Accent</selectedcolor>
 						<label>Aired $INFO[ListItem.Premiered]</label>						
 						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
-					</control>
+					</control>					
 					
-					
-					
-				<control type="label">
+					<control type="label">
 						<posx>640</posx>
 						<posy>22</posy>
 						<width>500</width>
 						<height>140</height>
-					<aligny>Left</aligny>
-					<font>Artist_Font</font>
-				<label>Plot</label>
-				</control>
-					
-					
+						<aligny>Left</aligny>
+						<font>Artist_Font</font>
+						<label>Plot</label>
+					</control>					
 					
 					<control type="image">
 						<posx>228</posx>
